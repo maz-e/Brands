@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+				addrulepath="/administrator/components/com_brand/models/rules"
+>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="brand_name"
+				type="text"
+				label="COM_BRAND_BRAND_FIELD_BRAND_NAME_LABEL"
+				description="COM_BRAND_BRAND_FIELD_BRAND_NAME_DESC"
+				size="40"
+				class="inputbox input-xlarge input-large-text validate-greeting"
+				validate="brandname"
+				required="true"
+				default=""
+				/>
+		<field
+				name="catid"
+				type="category"
+				extension="com_brand"
+				class="inputbox"
+				default=""
+				label="COM_BRAND_BRAND_FIELD_CATID_LABEL"
+				description="COM_BRAND_BRAND_FIELD_CATID_DESC"
+				required="true"
+		>
+				<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+		<field
+				name="published"
+				type="list"
+				class="chzn-color-state"
+				default="0"
+				size="1"
+				label="JSTATUS"
+				description="JFIELD_PUBLISHED_DESC">
+				<option value="1">JPUBLISHED</option>
+				<option value="0">JUNPUBLISHED</option>
+		</field>
+		<field
+				name="webpage"
+				type="URL"
+				class="inputbox input-xxlarge"
+				default="http://"
+				label="COM_BRAND_BRAND_FIELD_WEBPAGE_LABEL"
+				description="COM_BRAND_BRAND_FIELD_WEBPAGE_DESC"
+				size="40"
+				/>
+		<field
+				name="logo"
+				type="media"
+				class=""
+				default=""
+				label="COM_BRAND_BRAND_FIELD_LOGO_LABEL"
+				description="COM_BRAND_BRAND_FIELD_LOGO_DESC"
+				directory=""
+				/>
+	</fieldset>
+</form>

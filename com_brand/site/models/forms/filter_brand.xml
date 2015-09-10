@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="list">
+		<field
+			name="mycategory"
+			type="category"
+			extension="com_brand"
+			onchange="this.form.submit();"
+			>
+			<option value="">Seleccionar categoría</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CATEGORIES_LIST_LIMIT"
+			description="COM_CATEGORIES_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

@@ -1,0 +1,1 @@
+ALTER TABLE `#__brand` ADD UNIQUE(`brand_name`);
